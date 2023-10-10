@@ -3,7 +3,7 @@ const Boton = ({children})=>{
     return(
         <>
             <div>hello</div>
-            <div>Prueba repositorio</div>
+            <div>Prueba repositorio2</div>
         </>
     )
 
