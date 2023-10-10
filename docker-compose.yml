@@ -1,0 +1,18 @@
+version: '3'
+services:
+  node_maia2000:    
+    #image: "node:16.15"    
+    image: "node:alpine"
+    container_name: node_maia2000
+    restart: always           
+    working_dir: /home/node/app     
+    volumes:            
+      - ./:/home/node/app
+    environment:      
+      - NODE_ENV=development
+    ports:        
+        - 3001:3001        
+    expose:      
+      - 3001    
+    command: ["npm", start]
+    # command: ["npm", 'run']  # Desarrollo --> npm run start  ////   Produccion -->  npm run serve
